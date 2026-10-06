@@ -72,8 +72,8 @@ Los duplicados tienen prioridad porque vuelven ambiguo el emparejamiento. Se com
 
 ```bash
 curl -i -X POST http://localhost:8080/api/reconciliations \
-+  -H 'Content-Type: application/json' \
-+  --data '{"internalCsv":"reference,amount,currency\nTX001,100.00,PEN\nTX002,50.00,USD","providerCsv":"reference,amount,currency\nTX001,99.00,PEN\nTX003,50.00,USD"}'
+  -H 'Content-Type: application/json' \
+  --data '{"internalCsv":"reference,amount,currency\nTX001,100.00,PEN\nTX002,50.00,USD","providerCsv":"reference,amount,currency\nTX001,99.00,PEN\nTX003,50.00,USD"}'
 ```
 
 Ejemplo de respuesta, campos relevantes:
