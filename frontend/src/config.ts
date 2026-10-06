@@ -1,0 +1,52 @@
+export const config = {
+  name: "Reconciliation Engine",
+  tag: "RECONCILIATION LAB",
+  description: "Cada diferencia tiene una referencia y una explicación.",
+  post: "/api/reconciliations",
+  list: "/api/reconciliations",
+  sample: {
+    internalCsv: "reference,amount,currency\nTX001,100.00,PEN\nTX002,50.00,USD",
+    providerCsv: "reference,amount,currency\nTX001,99.00,PEN\nTX003,50.00,USD",
+  },
+  columns: ["id", "discrepancyCount", "internalRows", "providerRows"],
+  concepts: ["BigDecimal", "Reglas explicables", "Auditoría"],
+  scenarios: [],
+  repo: "reconciliation-engine",
+  index: 4,
+  secure: false,
+  payment: false,
+  monitor: false,
+  brand: "cuadra",
+  label: "CADA DIFERENCIA, EXPLICADA",
+  title: "Que los números",
+  emphasis: "cuenten lo mismo.",
+  intro:
+    "Compara tus registros con el reporte de un proveedor. Encuentra faltantes, duplicados e importes distintos, referencia por referencia.",
+  accent: "#f1ac55",
+  soft: "#f8f3eb",
+  kind: "reconciliation",
+  form: "Compara dos reportes",
+  button: "Conciliar reportes",
+  steps: [
+    "Carga los dos archivos",
+    "Comparamos las referencias",
+    "Revisa las diferencias",
+  ],
+  features: [
+    [
+      "01",
+      "Sin redondeos sorpresa",
+      "Los importes se comparan como valores decimales exactos.",
+    ],
+    [
+      "02",
+      "Una razón por diferencia",
+      "Cada discrepancia incluye la regla que la detectó.",
+    ],
+    [
+      "03",
+      "Un resultado consultable",
+      "Vuelve al mismo lote sin crear otra ejecución.",
+    ],
+  ],
+};
