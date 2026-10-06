@@ -20,6 +20,12 @@ Proyecto independiente del [Backend Systems Lab de Luis](https://github.com/Luis
 
 **Experimento principal:** Carga los ejemplos del panel: hay un importe distinto y referencias ausentes. Repite el mismo lote y obtendrás el mismo ID.
 
+## Vista previa
+
+![Cuadra · conciliación — interfaz Angular](docs/preview.png)
+
+Interfaz con formularios de operación, estado consultable y detalle técnico desplegable. La imagen muestra la portada; para ejecutar el flujo completo sigue las instrucciones de abajo.
+
 ## Ejecutar
 
 Requisitos: **JDK 21**, Maven 3.9+, Node 22.12+ para Angular y Docker Compose para el stack completo. [Compatibilidad de Spring Boot](https://docs.spring.io/spring-boot/system-requirements.html) · [Compatibilidad de Angular](https://angular.dev/reference/versions).
